@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New York Times Search</title>
+  </head>
+
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-4">
+        <i id="newspaper-icon" class="far fa-newspaper"></i>New York Times
+        Search
+      </h1>
+    </header>
+    <section>
+      <form id="parameters-search">
+        <div class="col-md-12 search-row">
+          <div class="header">
+            <h6 class="searchParameters">
+              <i class="fas fa-search"></i>Search Parameters
+            </h6>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Search Term:</label>
+              <input type="text" class="form-control" id="searchTerm" />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1"
+                >Number of Records to Retrieve:</label
+              >
+              <select class="form-control" id="numbersOfRecords">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1"
+                >Start Year (Optional):</label
+              >
+              <input type="text" class="form-control" id="startYear" />
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">End Year (Optional):</label>
+              <input type="text" class="form-control" id="endYear" />
+            </div>
+            <button id="searchBtn" class="btn btn-light" id="searchBtn">
+              <i class="fas fa-search"></i>Search
+            </button>
+            <button id="clearBtn" class="btn btn-light" id="clearResults">
+              <i class="fas fa-trash"></i>Clear Results
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <form id="parameters-search">
+        <div class="col-md-12 search-row">
+          <div class="header">
+            <h6 class="searchParameters">
+              <i class="fas fa-search"></i>Top Articles
+            </h6>
+          </div>
+          <li class="list-group">
+            <div id="article">
+              <h3 id="headline-article">
+                <i id="number">1</i> There's not much work for actors
+              </h3>
+              <p id="author">By Michael Pauleson</p>
+            </div>
+            <div id="article">
+              <h3 id="headline-article">
+                <i id="number">2</i> There's not much work for actors
+              </h3>
+              <p id="author">By Michael Pauleson</p>
+            </div>
+            <div id="article">
+              <h3 id="headline-article">
+                <i id="number">3</i> There's not much work for actors
+              </h3>
+              <p id="author">By Michael Pauleson</p>
+            </div>
+            <div id="article">
+              <h3 id="headline-article">
+                <i id="number">4</i> There's not much work for actors
+              </h3>
+              <p id="author">By Michael Pauleson</p>
+            </div>
+            <div id="article">
+              <h3 id="headline-article">
+                <i id="number">5</i> There's not much work for actors
+              </h3>
+              <p id="author">By Michael Pauleson</p>
+            </div>
+          </li>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <hr />
+      <p>
+        Made with lots and lots of<i id="heart-icon" class="fas fa-heart"></i>
+      </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
